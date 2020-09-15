@@ -1,7 +1,7 @@
 .app {
 	background-color: white;
 	color: var(--black);
-	width: 375px;
+	width: var(--width);
 	margin: 0 auto;
 	border-left: 1px solid whitesmoke;
 	border-right: 1px solid whitesmoke;
