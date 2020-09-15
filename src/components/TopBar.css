@@ -2,8 +2,13 @@
 
 .topb {
 	display: flex;
-	justify-content: space-between;
-	padding: 10px 25px;
+    justify-content: space-between;
+    padding: 10px 25px;
+    position: fixed;
+    width: 375px;
+    box-sizing: border-box;
+    background-color: white;
+    z-index: 2;
 }
 .topb__icon {
 	filter: opacity(0.5);
