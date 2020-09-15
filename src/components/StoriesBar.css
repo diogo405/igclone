@@ -1,0 +1,7 @@
+.sbar {
+	display: flex;
+    padding: 15px;
+    padding-left: 25px;
+    overflow-x: scroll;
+    margin-right: 15px;
+}

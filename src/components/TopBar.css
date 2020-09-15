@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap&text=Igclone');
+
+.topb {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 25px;
+}
+.topb__icon {
+	filter: opacity(0.5);
+    width: 17px;
+    height: 17px;
+}
+.topb__logo {
+	font-family: 'Parisienne', cursive;
+	font-size: 22px;
+}
