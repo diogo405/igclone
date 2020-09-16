@@ -1,0 +1,10 @@
+[
+	{"id": 1, "user": {"avatar": "s1.jpg"}},
+	{"id": 2, "user": {"avatar": "s2.jpg"}},
+	{"id": 3, "user": {"avatar": "s3.jpg"}},
+	{"id": 4, "user": {"avatar": "s4.jpg"}},
+	{"id": 5, "user": {"avatar": "s5.jpg"}},
+	{"id": 6, "user": {"avatar": "s6.jpg"}, "watched": true},
+	{"id": 7, "user": {"avatar": "s7.jpg"}, "watched": true},
+	{"id": 8, "user": {"avatar": "s8.jpg"}, "watched": true}
+]

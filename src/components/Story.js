@@ -7,7 +7,7 @@ class Story extends React.Component {
         storyClass += this.props.story.watched ? ' story--watched' : ''
         
         return (
-            <div className={storyClass} style={{backgroundImage: 'url(' + this.props.story.user.avatar + ')'}}></div>
+            <div className={storyClass} style={{backgroundImage: 'url(' + require(`../images/${this.props.story.user.avatar}`) + ')'}}></div>
         )
     }
 }
