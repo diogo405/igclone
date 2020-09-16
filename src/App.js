@@ -1,33 +1,28 @@
 import React from 'react'
 import TopBar from './components/TopBar.js'
 import BottomBar from './components/BottomBar.js'
-import StoriesBar from './components/StoriesBar.js'
-import Feed from './components/Feed.js'
 import './App.css'
-import feedData from './json/feed.json'
-import storiesData from './json/stories.json'
+import { HashRouter as Router, Switch, Route } from "react-router-dom"
+import HomePage from './pages/HomePage.js'
+import CommentsPage from './pages/CommentsPage.js'
 
-
-class App extends React.Component {
-    state = {
-        stories: [],
-        feed: []
-    }
-    
-    componentDidMount = () => {
-        this.setState({stories: storiesData, feed: feedData})
-    }
-
-    render = () => {
-        return (
+function App() {
+    return (
+        <Router>
             <div className="app">
                 <TopBar/>
-                <StoriesBar stories={this.state.stories}/>
-                <Feed feed={this.state.feed}/>
+                <Switch>
+                    <Route exact path="/">
+                        <HomePage/>
+                    </Route>
+                    <Route path="/post/:id/comments">
+                        <CommentsPage/>
+                    </Route>
+                </Switch>
                 <BottomBar/>
             </div>
-        )
-    }
+        </Router>
+    )
 }
 
 export default App

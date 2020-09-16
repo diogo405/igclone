@@ -1,5 +1,6 @@
 import React from 'react'
 import './Post.css'
+import { Link } from "react-router-dom"
 
 class Post extends React.Component {
     state = {liked: false, saved: false, doubleClick: false}
@@ -33,7 +34,9 @@ class Post extends React.Component {
                       <img className="post__action-icon post__action-icon--invert" src={likeIcon} alt="" onClick={this.toggleLike}/>
   	              	</div>
                     <div className="post__action">
-                      <img className="post__action-icon post__action-icon--invert" src={require('../images/streamline-icon-conversation-chat-2@24x24.png')} alt=""/>
+                      <Link to={`/post/${this.props.post.id}/comments`}>
+                        <img className="post__action-icon post__action-icon--invert" src={require('../images/streamline-icon-conversation-chat-2@24x24.png')} alt=""/>
+                      </Link>
                     </div>
                     <div className="post__action">
                       <img className="post__action-icon post__action-icon--invert" src={require('../images/streamline-icon-send-email@24x24.png')} alt=""/>
