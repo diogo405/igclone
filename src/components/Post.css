@@ -38,7 +38,7 @@
     z-index: 1;
 }
 .post:last-child .post__actions {
-    bottom: 75px;
+    bottom: 55px;
 }
 .post__actions-left {
 	display: flex;

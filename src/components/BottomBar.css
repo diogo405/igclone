@@ -2,7 +2,7 @@
 	border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: white;
-    padding: 20px 40px;
+    padding: 15px 40px 15px 40px;
     position: fixed;
     bottom: 0;
     max-width: var(--width);
@@ -14,7 +14,7 @@
     width: 100%;
 }
 .bbar__icon {
-	filter: opacity(0.5);
-	width: 20px;
-	height: 20px;
+	filter: opacity(0.6);
+    width: 15px;
+    height: 15px;
 }
