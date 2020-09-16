@@ -3,8 +3,6 @@
 	color: var(--black);
 	max-width: var(--width);
 	margin: 0 auto;
-	border-left: 1px solid whitesmoke;
-	border-right: 1px solid whitesmoke;
 	font-family: -apple-system, system-ui;
 	position: relative;
 }
