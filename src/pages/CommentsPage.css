@@ -1,3 +1,16 @@
 .comments {
 	padding-top: 40px;
 }
+.comments__back {
+	padding: 20px;
+    border: 1px solid whitesmoke;
+    display: block;
+    text-decoration: none;
+    color: var(--black);
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    max-width: var(--width);
+    box-sizing: border-box;
+    background-color: white;
+}

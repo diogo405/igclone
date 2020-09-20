@@ -3,6 +3,7 @@ import './CommentsPage.css'
 import comments from '../json/comments.json'
 import { withRouter } from 'react-router-dom'
 import Comment from '../components/Comment.js'
+import { Link } from "react-router-dom"
 
 class CommentsPage extends React.Component {
 	state = {
@@ -18,10 +19,26 @@ class CommentsPage extends React.Component {
 		this.setState({comments: postComments})
 	}
 
+	onLike = (id, liked, likes) => {
+		this.setState((state) => {
+			let comment = state.comments.find(c => c.id === id)
+			comment.liked = liked
+			comment.likes = likes
+			return {
+				comments: state.comments
+			}
+		})
+	}
+
 	render = () => {
 		return (
 			<div className="comments">
-				{this.state.comments.map(c => <Comment comment={c} key={c.comment}/>)}
+				<Link className="comments__back" to="/">
+					←
+				</Link>
+				<div className="comments__wrap">
+					{this.state.comments.map(c => <Comment comment={c} key={c.comment} onLike={this.onLike}/>)}
+				</div>
 			</div>
 		)
 	}

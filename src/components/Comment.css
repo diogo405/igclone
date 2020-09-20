@@ -3,6 +3,9 @@
     justify-content: space-between;
     padding: 20px;
 }
+.comment:first-child {
+	padding-top: 78px;
+}
 .comment:last-child {
 	padding-bottom: 65px;
 }

@@ -4,7 +4,7 @@ import './Comment.css'
 function Comment(props) {
 
 	let commentLikes = props.comment.likes > 0 ? <div className="comment__likes">{props.comment.likes} {props.comment.likes > 1 ? 'likes' : 'like'}</div> : ''
-
+	let liked = props.comment.liked ? require('../images/streamline-icon-love-it@24x24.png') : require('../images/streamline-icon-love-it-alternate@20x20.png')
 	return (
 		<div className="comment">
 			<div className="comment__cont">
@@ -15,7 +15,7 @@ function Comment(props) {
 					{commentLikes}
 				</div>
 			</div>
-			<img className="comment__like" src={require('../images/streamline-icon-love-it@20x20.png')} alt=""/>
+			<img className="comment__like" src={liked} alt="" onClick={() => props.onLike(props.comment.id, !props.comment.liked, props.comment.liked ? props.comment.likes - 1 : props.comment.likes + 1)}/>
 		</div>
 	)	
 }
