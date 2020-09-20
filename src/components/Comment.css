@@ -1,0 +1,37 @@
+.comment {
+	display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.comment:last-child {
+	padding-bottom: 65px;
+}
+.comment__cont {
+	display: flex;
+}
+.comment__avatar {
+	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.comment__text {
+	margin-left: 20px;
+	align-self: center;
+}
+.comment__user {
+	font-weight: bold;
+}
+.comment__comm {
+	display: inline-block;
+    margin-left: 10px;
+}
+.comment__likes {
+	margin-top: 10px;
+    font-size: 14px;
+    color: grey;
+}
+.comment__like {
+	width: 15px;
+    height: 15px;
+    align-self: center;
+}

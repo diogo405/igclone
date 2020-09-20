@@ -5,10 +5,12 @@ import './App.css'
 import { HashRouter as Router, Switch, Route } from "react-router-dom"
 import HomePage from './pages/HomePage.js'
 import CommentsPage from './pages/CommentsPage.js'
+import ScrollToTop from './components/ScrollToTop.js'
 
 function App() {
     return (
         <Router>
+            <ScrollToTop/>
             <div className="app">
                 <TopBar/>
                 <Switch>

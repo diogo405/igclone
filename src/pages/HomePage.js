@@ -3,6 +3,7 @@ import feedData from '../json/feed.json'
 import storiesData from '../json/stories.json'
 import StoriesBar from '../components/StoriesBar.js'
 import Feed from '../components/Feed.js'
+import './HomePage.css'
 
 class HomePage extends React.Component {
 	state = {
