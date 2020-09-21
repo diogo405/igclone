@@ -3,6 +3,7 @@ import './CommentsPage.css'
 import comments from '../json/comments.json'
 import { withRouter } from 'react-router-dom'
 import Comment from '../components/Comment.js'
+import CommentsForm from '../components/CommentsForm.js'
 import { Link } from "react-router-dom"
 
 class CommentsPage extends React.Component {
@@ -30,6 +31,17 @@ class CommentsPage extends React.Component {
 		})
 	}
 
+	onCommentPost = (comment) => {
+		this.setState((state) => {
+			const found = state.comments.find(c => c.id === comment.id)
+			if (found) return {comments: state.comments}
+			state.comments.push(comment)
+			return {
+				comments: state.comments
+			}
+		})
+	}
+
 	render = () => {
 		return (
 			<div className="comments">
@@ -37,8 +49,9 @@ class CommentsPage extends React.Component {
 					←
 				</Link>
 				<div className="comments__wrap">
-					{this.state.comments.map(c => <Comment comment={c} key={c.comment} onLike={this.onLike}/>)}
+					{this.state.comments.map(c => <Comment comment={c} key={c.id} onLike={this.onLike}/>)}
 				</div>
+				<CommentsForm onCommentPost={this.onCommentPost}/>
 			</div>
 		)
 	}

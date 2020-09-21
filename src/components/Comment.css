@@ -6,9 +6,6 @@
 .comment:first-child {
 	padding-top: 78px;
 }
-.comment:last-child {
-	padding-bottom: 65px;
-}
 .comment__cont {
 	display: flex;
 }

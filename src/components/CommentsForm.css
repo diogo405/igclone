@@ -1,0 +1,20 @@
+.commentsf {
+	display: flex;
+	justify-content: space-between;
+}
+.commentsf__input {
+    background-color: white;
+    border: none;
+    border-top: 1px solid whitesmoke;
+    padding: 10px 20px;
+    margin-bottom: 65px;
+    width: 100%;
+}
+.commentsf__btn {
+	align-self: flex-start;
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    color: var(--blue);
+    font-weight: bold;
+}
