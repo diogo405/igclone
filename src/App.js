@@ -5,6 +5,7 @@ import './App.css'
 import { HashRouter as Router, Switch, Route } from "react-router-dom"
 import HomePage from './pages/HomePage.js'
 import CommentsPage from './pages/CommentsPage.js'
+import StoriesPage from './pages/StoriesPage.js'
 import ScrollToTop from './components/ScrollToTop.js'
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
                     </Route>
                     <Route path="/post/:id/comments">
                         <CommentsPage/>
+                    </Route>
+                    <Route path="/:username/stories">
+                        <StoriesPage/>
                     </Route>
                 </Switch>
                 <BottomBar/>

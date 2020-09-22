@@ -1,10 +1,10 @@
 [
-	{"id": 1, "user": {"avatar": "s1.jpg"}},
-	{"id": 2, "user": {"avatar": "s2.jpg"}},
-	{"id": 3, "user": {"avatar": "s3.jpg"}},
-	{"id": 4, "user": {"avatar": "s4.jpg"}},
-	{"id": 5, "user": {"avatar": "s5.jpg"}},
-	{"id": 6, "user": {"avatar": "s6.jpg"}, "watched": true},
-	{"id": 7, "user": {"avatar": "s7.jpg"}, "watched": true},
-	{"id": 8, "user": {"avatar": "s8.jpg"}, "watched": true}
+	{"id": 1, "user": {"avatar": "s1.jpg", "username": "sebnalla"}},
+	{"id": 2, "user": {"avatar": "s2.jpg", "username": "rebbeca_j"}},
+	{"id": 3, "user": {"avatar": "s3.jpg", "username": "desilusion"}},
+	{"id": 4, "user": {"avatar": "s4.jpg", "username": "neutral_vibes"}},
+	{"id": 5, "user": {"avatar": "s5.jpg", "username": "deborarosa"}},
+	{"id": 6, "user": {"avatar": "s6.jpg", "username": "neomig"}, "watched": true},
+	{"id": 7, "user": {"avatar": "s7.jpg", "username": "camilaaa"}, "watched": true},
+	{"id": 8, "user": {"avatar": "s8.jpg", "username": "__mvb"}, "watched": true}
 ]
