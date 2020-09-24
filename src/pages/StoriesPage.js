@@ -24,7 +24,7 @@ class StoriesPage extends React.Component {
 		return (
 			<div className="spage">
 				<StoryTimer current={this.state.current} total={this.state.stories.length} onNext={this.next}/>
-				{this.state.stories.map((s, index) => <div className={`spage__story ${index === this.state.current ? 'spage__story--active' : ''}`} style={{backgroundImage: `url(${s})`}} key={s} onClick={this.next}></div>)}
+				{this.state.stories.map((s, index) => <div className={`spage__story ${index === this.state.current ? 'spage__story--active' : ''}`} style={{backgroundImage: `url(${require('../images/' + s)}`}} key={s} onClick={this.next}></div>)}
 			</div>
 		)
 	}
