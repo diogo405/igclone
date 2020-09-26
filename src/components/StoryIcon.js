@@ -1,6 +1,6 @@
 import React from 'react'
 import './StoryIcon.css'
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 class StoryIcon extends React.Component {
     render = () => {
