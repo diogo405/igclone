@@ -21,11 +21,14 @@ class Post extends React.Component {
         const likeIcon = this.state.liked ? require('../images/streamline-icon-love-it@24x24.png') : require('../images/streamline-icon-love-it-alternate@20x20.png')
         const saveIcon = this.state.saved ? require('../images/streamline-icon-rating-star@20x20.png') : require('../images/streamline-icon-rating-star-alternate@20x20.png')
         const postLikeClass = this.state.doubleClick ? 'post__like post__like--liked post__action-icon--invert' : 'post__like post__action-icon--invert'
+        const postImage = require(`../images/${this.props.post.photo.url}.jpg`)
+        const avatar = require(`../images/${this.props.post.user.avatar}`)
+
         return (
             <div className="post">
-              	<img className="post__img" src={this.props.post.photo.url} alt=""/>
+              	<img className="post__img" src={postImage} alt=""/>
               	<div className="post__user">
-              		<img className="post__avatar" src={this.props.post.user.avatar} alt=""/>
+              		<img className="post__avatar" src={avatar} alt=""/>
               		<span className="post__username">{this.props.post.user.username}</span>
               	</div>
               	<div className="post__actions">
